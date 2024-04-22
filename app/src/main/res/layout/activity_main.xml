@@ -51,6 +51,7 @@
         android:textSize="22sp" />
 
     <TextView
+        android:id="@+id/text_user_name_home"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/linear_menu"

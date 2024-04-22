@@ -3,4 +3,7 @@
     <string name="btn_new_phrase">nova frase</string>
     <string name="hello_name">Olá, Kotlin!</string>
     <string name="phrase_main">oioioasdasdasda adasdasdasd asdasdasdasdasd</string>
+    <string name="lets_begin">Vamos começar?</string>
+    <string name="validation_name">Qual seu nome?</string>
+    <string name="btn_save">Salvar</string>
 </resources>
