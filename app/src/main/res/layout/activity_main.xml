@@ -12,13 +12,16 @@
         android:id="@+id/linear_menu"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:padding="8dp">
+        android:background="@color/purple"
+        android:paddingTop="12dp"
+        android:paddingBottom="12dp">
 
         <ImageView
             android:layout_width="0dp"
             android:layout_height="40dp"
             android:layout_weight="1"
-            android:src="@drawable/ic_all" />
+            android:src="@drawable/ic_all"
+            app:tint="@color/white" />
 
         <ImageView
             android:layout_width="0dp"
@@ -41,16 +44,21 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
+        android:fontFamily="@font/cabin"
         android:gravity="center"
-        android:text="@string/phrase_main" />
+        android:text="@string/phrase_main"
+        android:textColor="@color/black"
+        android:textSize="22sp" />
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/linear_menu"
         android:layout_marginTop="16dp"
+        android:fontFamily="@font/cabin"
         android:gravity="center"
-        android:text="@string/hello_name" />
+        android:text="@string/hello_name"
+        android:textSize="16sp" />
 
     <View
         android:layout_width="160dp"
@@ -62,11 +70,14 @@
         android:elevation="4dp" />
 
     <Button
+        android:id="@+id/btn_new_phrase"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
         android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
         android:layout_marginBottom="64dp"
+        android:backgroundTint="@color/purple"
+        android:fontFamily="@font/cabin"
         android:text="@string/btn_new_phrase"
         android:textAllCaps="true" />
 
