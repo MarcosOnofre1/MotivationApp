@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".MainActivity">
+    tools:context=".ui.MainActivity">
 
     <LinearLayout
         android:id="@+id/linear_menu"
@@ -17,23 +17,25 @@
         android:paddingBottom="12dp">
 
         <ImageView
+            android:id="@+id/image_All"
             android:layout_width="0dp"
             android:layout_height="40dp"
             android:layout_weight="1"
-            android:src="@drawable/ic_all"
-            app:tint="@color/white" />
+            android:src="@drawable/ic_all"/>
 
         <ImageView
+            android:id="@+id/image_Happy"
             android:layout_width="0dp"
             android:layout_height="40dp"
             android:layout_weight="1"
-            android:src="@drawable/ic_happy" />
+            android:src="@drawable/ic_happy"/>
 
         <ImageView
+            android:id="@+id/image_Sunny"
             android:layout_width="0dp"
             android:layout_height="40dp"
             android:layout_weight="1"
-            android:src="@drawable/ic_sunny" />
+            android:src="@drawable/ic_sunny"/>
 
 
     </LinearLayout>

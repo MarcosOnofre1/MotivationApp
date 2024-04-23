@@ -1,13 +1,13 @@
-package com.example.motivationapp
+package com.example.motivationapp.ui
 
-import android.content.Context
 import android.content.Intent
-import android.content.SharedPreferences
 import android.os.Bundle
 import android.view.View
-import android.view.inputmethod.InputMethodManager
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import com.example.motivationapp.infra.MotivationConstants
+import com.example.motivationapp.R
+import com.example.motivationapp.infra.SecurityPreferences
 import com.example.motivationapp.databinding.ActivityUserBinding
 
 class UserActivity : AppCompatActivity(), View.OnClickListener {
@@ -15,6 +15,7 @@ class UserActivity : AppCompatActivity(), View.OnClickListener {
     private lateinit var binding: ActivityUserBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+
         binding = ActivityUserBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
@@ -22,12 +23,27 @@ class UserActivity : AppCompatActivity(), View.OnClickListener {
 
         binding.btnSaveName.setOnClickListener(this)
 
+        // verifica se o nome ja ta salvo, entao vai direto para mainActivity
+        verifyUserName()
+
     }
+
+
 
     override fun onClick(v: View) {
         if (v.id == R.id.btn_save_name) {
             handleSave()
         }
+    }
+
+    private fun verifyUserName() {
+        val name = SecurityPreferences(this).getString(MotivationConstants.KEY.USER_NAME)
+        if (name != ""){
+            startActivity(Intent(this, MainActivity::class.java))
+            finish()
+
+        }
+
     }
 
     private fun handleSave() {
@@ -37,7 +53,7 @@ class UserActivity : AppCompatActivity(), View.OnClickListener {
         if (name != "") {
 
             //salvando nome do usuario
-            SecurityPreferences(this).storeString("USER_NAME", name)
+            SecurityPreferences(this).storeString(MotivationConstants.KEY.USER_NAME, name)
 
             startActivity(Intent(this, MainActivity::class.java))
             finish()
@@ -47,5 +63,4 @@ class UserActivity : AppCompatActivity(), View.OnClickListener {
 
         }
     }
-
 }

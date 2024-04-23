@@ -8,7 +8,7 @@
     android:background="#042940"
     android:orientation="vertical"
     android:paddingHorizontal="16dp"
-    tools:context=".UserActivity">
+    tools:context=".ui.UserActivity">
 
     <TextView
         android:id="@+id/text_begin"
@@ -17,6 +17,7 @@
         android:layout_alignParentTop="true"
         android:layout_centerInParent="true"
         android:layout_marginTop="64dp"
+        android:fontFamily="@font/cabin"
         android:text="@string/lets_begin"
         android:textColor="@color/white"
         android:textSize="30sp" />
@@ -27,6 +28,7 @@
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
         android:gravity="center_horizontal"
+        android:fontFamily="@font/cabin"
         android:hint="@string/validation_name"
         android:textColor="@color/white"
         android:textColorHint="@color/teal_700" />
@@ -39,6 +41,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="64dp"
         android:backgroundTint="#13678A"
+        android:fontFamily="@font/cabin"
         android:text="@string/btn_save"
         android:textAllCaps="true" />
 
