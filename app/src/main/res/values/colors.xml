@@ -9,6 +9,7 @@
     <color name="teal_200">#FF03DAC5</color>
     <color name="teal_700">#FF018786</color>
     <color name="purple">#7F2A68</color>
-    <color name="dark_purple">#5F1049</color>
+    <color name="dark_purple">#3E022E</color>
     <color name="light_purple">#D081AB</color>
+    <color name="background">#45214A</color>
 </resources>

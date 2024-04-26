@@ -5,7 +5,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#042940"
+    android:background="@color/background"
     android:orientation="vertical"
     android:paddingHorizontal="16dp"
     tools:context=".ui.UserActivity">
