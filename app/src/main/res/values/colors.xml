@@ -12,4 +12,5 @@
     <color name="dark_purple">#3E022E</color>
     <color name="light_purple">#D081AB</color>
     <color name="background">#45214A</color>
+    <color name="btn_color">#13678A</color>
 </resources>

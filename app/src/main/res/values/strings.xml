@@ -6,4 +6,11 @@
     <string name="lets_begin">Vamos começar ?</string>
     <string name="validation_name">Qual seu nome?</string>
     <string name="btn_save">Salvar</string>
+    <string name="btn_next">Next</string>
+    <string name="text_onb_title_home_1">Desperte sua Motivação</string>
+    <string name="text_onb_title_home_2">Motiva-se a cada dia</string>
+    <string name="text_onb_title_home_3">Seja sua Melhor Versão</string>
+    <string name="text_onb_sub_home_1">Descubra um oceano de motivação com nosso aplicativo. Receba diariamente frases inspiradoras e mensagens poderosas para impulsionar seu dia.</string>
+    <string name="text_onb_sub_home_2">Explore uma biblioteca de frases motivacionais e comece cada dia com um sorriso e uma atitude vitoriosa.</string>
+    <string name="text_onb_sub_home_3">Torne-se a versão mais confiante e poderosa de si mesmo com apenas alguns toques na tela.</string>
 </resources>

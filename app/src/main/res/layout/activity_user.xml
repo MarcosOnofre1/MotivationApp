@@ -40,7 +40,7 @@
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="64dp"
-        android:backgroundTint="#13678A"
+        android:backgroundTint="@color/btn_color"
         android:fontFamily="@font/cabin"
         android:text="@string/btn_save"
         android:textAllCaps="true" />
