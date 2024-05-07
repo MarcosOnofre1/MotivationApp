@@ -6,16 +6,16 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@color/background"
+    android:background="@drawable/gradient_background"
     tools:context=".ui.onbording.FirstOnbordingActivity">
 
     <LinearLayout
         android:id="@+id/linear_lens"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/btn_next"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="64dp"
         android:layout_centerInParent="true"
-        android:layout_marginTop="8dp"
         android:orientation="horizontal">
 
         <ImageView
@@ -30,7 +30,7 @@
             android:layout_marginStart="2dp"
             android:layout_marginEnd="2dp"
             android:src="@drawable/ic_lens"
-            app:tint="@color/btn_color" />
+            app:tint="@color/background" />
 
         <ImageView
             android:layout_width="10dp"
@@ -38,7 +38,7 @@
             android:layout_marginStart="2dp"
             android:layout_marginEnd="2dp"
             android:src="@drawable/ic_lens"
-            app:tint="@color/btn_color" />
+            app:tint="@color/background" />
 
     </LinearLayout>
 
@@ -46,7 +46,7 @@
         android:id="@+id/img_onb_1"
         android:layout_width="300dp"
         android:layout_height="300dp"
-        android:layout_marginTop="64dp"
+        android:layout_marginTop="100dp"
         android:layout_centerInParent="true"
         android:layout_alignParentTop="true"
         android:src="@drawable/ic_onbording_1" />
@@ -84,9 +84,9 @@
         android:layout_width="140dp"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
-        android:layout_below="@+id/text_onb_1"
-        android:layout_marginTop="64dp"
-        android:backgroundTint="@color/btn_color"
+        android:layout_above="@+id/linear_lens"
+        android:layout_marginBottom="8dp"
+        android:backgroundTint="@color/background"
         android:fontFamily="@font/cabin"
         android:text="@string/btn_next"
         android:textAllCaps="true" />

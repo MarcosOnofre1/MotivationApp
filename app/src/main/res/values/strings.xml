@@ -1,10 +1,11 @@
 <resources>
     <string name="app_name">MotivationApp</string>
-    <string name="btn_new_phrase">Motivar !</string>
+    <string name="btn_new_phrase">Motivar!</string>
     <string name="hello_name">Olá, Kotlin!</string>
-    <string name="phrase_main">oioioasdasdasda adasdasdasd asdasdasdasdasd</string>
-    <string name="lets_begin">Vamos começar ?</string>
+    <string name="phrase_main">Motivation</string>
+    <string name="lets_begin">Vamos começar?</string>
     <string name="validation_name">Qual seu nome?</string>
+    <string name="provide_your_name">informe seu nome.</string>
     <string name="btn_save">Salvar</string>
     <string name="btn_next">Next</string>
     <string name="text_onb_title_home_1">Desperte sua Motivação</string>

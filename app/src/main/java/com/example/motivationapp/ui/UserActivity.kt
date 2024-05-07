@@ -29,7 +29,6 @@ class UserActivity : AppCompatActivity(), View.OnClickListener {
     }
 
 
-
     override fun onClick(v: View) {
         if (v.id == R.id.btn_save_name) {
             handleSave()
@@ -38,7 +37,7 @@ class UserActivity : AppCompatActivity(), View.OnClickListener {
 
     private fun verifyUserName() {
         val name = SecurityPreferences(this).getString(MotivationConstants.KEY.USER_NAME)
-        if (name != ""){
+        if (name != "") {
             startActivity(Intent(this, MainActivity::class.java))
             finish()
 
@@ -48,18 +47,19 @@ class UserActivity : AppCompatActivity(), View.OnClickListener {
 
     private fun handleSave() {
 
-        // pega info
+        // obtem o nome
         val name = binding.edtName.text.toString()
+
+        // verifica se o usuario preencheu o nome
         if (name != "") {
-
-            //salvando nome do usuario
+            //salvando os dados do usuario e redireciona para as frases
             SecurityPreferences(this).storeString(MotivationConstants.KEY.USER_NAME, name)
-
             startActivity(Intent(this, MainActivity::class.java))
+
             finish()
 
         } else {
-            Toast.makeText(this, "Informe seu nome.", Toast.LENGTH_SHORT).show()
+            Toast.makeText(this, getString(R.string.provide_your_name), Toast.LENGTH_SHORT).show()
 
         }
     }

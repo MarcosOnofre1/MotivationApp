@@ -5,7 +5,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/background"
+    android:background="@drawable/gradient_background"
     android:orientation="vertical"
     tools:context=".ui.onbording.FirstOnbordingActivity">
 
@@ -13,9 +13,9 @@
         android:id="@+id/linear_lens"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/btn_next_final"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="64dp"
         android:layout_centerInParent="true"
-        android:layout_marginTop="8dp"
         android:orientation="horizontal">
 
         <ImageView
@@ -23,7 +23,7 @@
             android:layout_height="10dp"
             android:layout_marginEnd="2dp"
             android:src="@drawable/ic_lens"
-            app:tint="@color/btn_color" />
+            app:tint="@color/background" />
 
         <ImageView
             android:layout_width="10dp"
@@ -31,7 +31,7 @@
             android:layout_marginStart="2dp"
             android:layout_marginEnd="2dp"
             android:src="@drawable/ic_lens"
-            app:tint="@color/btn_color"/>
+            app:tint="@color/background"/>
 
         <ImageView
             android:layout_width="10dp"
@@ -48,7 +48,7 @@
         android:layout_height="300dp"
         android:layout_alignParentTop="true"
         android:layout_centerInParent="true"
-        android:layout_marginTop="64dp"
+        android:layout_marginTop="100dp"
         android:src="@drawable/ic_onbording_2" />
 
     <TextView
@@ -59,7 +59,7 @@
         android:layout_centerInParent="true"
         android:layout_marginTop="32dp"
         android:fontFamily="@font/cabin"
-        android:text="@string/text_onb_title_home_2"
+        android:text="@string/text_onb_title_home_3"
         android:textAlignment="center"
         android:textColor="@color/white"
         android:textSize="20sp"
@@ -83,10 +83,10 @@
         android:id="@+id/btn_next_final"
         android:layout_width="140dp"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/text_onb_3"
+        android:layout_above="@+id/linear_lens"
+        android:layout_marginBottom="8dp"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="86dp"
-        android:backgroundTint="@color/btn_color"
+        android:backgroundTint="@color/background"
         android:fontFamily="@font/cabin"
         android:text="@string/btn_next"
         android:textAllCaps="true" />

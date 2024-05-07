@@ -30,9 +30,22 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         handleFilter(R.id.image_All)
 
         // Frases no menu
-        handleNextPhrase()
+        refreshPhrase()
 
         // Evento de clicks
+        handleEventClicks()
+    }
+
+    override fun onClick(view: View) {
+        if (view.id == R.id.btn_new_phrase) {
+            refreshPhrase()
+
+        } else if (view.id in listOf(R.id.image_All, R.id.image_Happy, R.id.image_Sunny)) {
+            handleFilter(view.id)
+        }
+    }
+
+    private fun handleEventClicks() {
         binding.btnNewPhrase.setOnClickListener(this)
         binding.imageAll.setOnClickListener(this)
         binding.imageHappy.setOnClickListener(this)
@@ -40,16 +53,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
 
     }
 
-    override fun onClick(view: View) {
-        if (view.id == R.id.btn_new_phrase) {
-           handleNextPhrase()
-
-        } else if (view.id in listOf(R.id.image_All, R.id.image_Happy, R.id.image_Sunny)) {
-            handleFilter(view.id)
-        }
-    }
-
-    private fun handleNextPhrase() {
+    private fun refreshPhrase() {
         binding.textPhraseMain.text = Mock().getPhrase(categoryId)
     }
 
