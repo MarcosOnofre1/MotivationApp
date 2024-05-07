@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">MotivationApp</string>
+    <string name="btn_new_phrase">new phrase</string>
+    <string name="hello">Hello</string>
+    <string name="hello_name">Hello, Kotlin!</string>
+    <string name="phrase_main">Motivation</string>
+    <string name="lets_begin">Let\'s start?</string>
+    <string name="validation_name">What is your name?</string>
+    <string name="provide_your_name">provide your name.</string>
+    <string name="btn_save">save</string>
+    <string name="btn_next">Next</string>
+    <string name="text_onb_title_home_1">Awaken your Motivation</string>
+    <string name="text_onb_title_home_2">Motivate yourself every day</string>
+    <string name="text_onb_title_home_3">Be your best version</string>
+    <string name="text_onb_sub_home_1">Discover an ocean of motivation with our app. Receive daily inspiring phrases and powerful messages to boost your day.</string>
+    <string name="text_onb_sub_home_2">Explore a library of motivational phrases and start each day with a smile and a winning attitude.</string>
+    <string name="text_onb_sub_home_3">Become the most confident and powerful version of yourself with just a few taps on the screen.</string>
+
+</resources>
